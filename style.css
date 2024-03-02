@@ -15,8 +15,15 @@ button {
     font-size: 400;
 }
 
+.header_txt {
+    color: lightpink;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all .3s ease;
+    font-size: 700;
+}
+
 header {
-    padding: 10px 0;
+    /* padding: 10px; */
     min-height: 50px;
     display: flex;
     flex-direction: column;
@@ -33,6 +40,11 @@ header {
 .header_container {
     display: grid;
     grid-template-columns: 150px 1fr 100px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid lightpink;
+    padding: 10px;
+    border-top: none;
 }
 
 .logo {
@@ -53,7 +65,8 @@ header {
 }
 
 .p_txt:hover,
-.menu_btn:hover .p_txt {
+.menu_btn:hover .p_txt,
+.btn:hover .p_txt {
     color: grey;
 }
 
@@ -65,6 +78,59 @@ header {
     transition: all .3s ease;
 }
 
-.menu_btn:hover {
+.btn {
+    transition: all .3s ease;
+    background: transparent;
+    border-radius: 3px;
+    border: 1px solid lightpink;
+}
+
+.menu_btn:hover,
+.btn:hover {
     border:1px solid gray;
+}
+
+.upper_block {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    min-height: 500px;
+}
+
+.count_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.pares_block {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.pare {
+    border: 1px solid lightpink;
+    display: flex;
+    gap: 15px;
+    padding: 5px;
+    align-items: center;
+}
+
+.count_input {
+    border: 1px solid lightpink;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.count_btn {
+    padding: 10px;
+    border: 1px solid lightpink;
+}
+
+.list_block {
+    max-height: 500px;
+    overflow-y: scroll;
 }
